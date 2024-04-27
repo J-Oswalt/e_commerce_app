@@ -51,7 +51,7 @@ const LoginPage = ({ history }) => {
         <Form.Control
           type="txt"
           id="username"
-          placeholder="Username"
+          placeholder="ron1993/harry1992"
           onChange={handleUsernameChange}
         />
       </FormGroup>
@@ -60,7 +60,7 @@ const LoginPage = ({ history }) => {
         <Form.Control
           type="password"
           id="password"
-          placeholder="Password"
+          placeholder="ronweasley1993/harrypotter1992"
           onChange={handlePasswordChange}
         />
       </FormGroup>
