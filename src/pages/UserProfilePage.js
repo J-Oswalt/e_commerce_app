@@ -35,7 +35,7 @@ function UserProfilePage() {
   
   const updateUserHandler = (e) => {
     e.preventDefault();
-    if(password != confirmPassword) {
+    if(password !== confirmPassword) {
         setError("Passwords do not match!")
     } else if (email === "") {
     setError("Email is required!")

@@ -1,7 +1,7 @@
 import React from "react";
 import { Button, Form, FormGroup, Row, Col } from "react-bootstrap";
 import AlertMessage from "../components/AlertMessage";
-import { credentials } from "../credentials";
+//import { credentials } from "../credentials";
 
 const LoginPage = ({ history }) => {
   const [username, setUsername] = React.useState("");

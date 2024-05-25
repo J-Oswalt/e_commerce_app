@@ -6,6 +6,7 @@ import categories from "./categories";
 import users from "./users";
 import LoginPage from "./pages/LoginPage";
 import UserProfilePage from "./pages/UserProfilePage";
+import AddProductPage from "./pages/AddProductPage";
 
 const App = () => {
   const loggedIdUser = JSON.parse(sessionStorage.getItem('loggedInUser'))
@@ -16,6 +17,7 @@ const App = () => {
         <Container>
           {loggedIdUser && <ProductsListPage />}
           {loggedIdUser &&  !loggedIdUser.isAdmin && <UserProfilePage></UserProfilePage>}
+          {loggedIdUser &&  !loggedIdUser.isAdmin && <AddProductPage></AddProductPage>}
           {!loggedIdUser && <LoginPage />}
         </Container>
       </main>
