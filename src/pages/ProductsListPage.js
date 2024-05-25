@@ -16,15 +16,12 @@ const ProductsListPage = () => {
     setSearchbarValue(event.target.value);
     console.log(searchbarValue);
 
-    productsList.filter((product) => {
-      console.log(product.name.toLowerCase().includes(searchbarValue.toLowerCase()));
-    });
-
     let productsListFiltered = products.filter((product) => {
-      if(product.name.toLowerCase().includes(searchbarValue.toLowerCase())){
+      if(product.name.toLowerCase().includes(searchbarValue.toLowerCase())) {
         return true;
-      }
+      } else {
       return false;
+      }
     });
 
     console.log(productsListFiltered);

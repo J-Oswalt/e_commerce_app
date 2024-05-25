@@ -29,7 +29,7 @@ const Header = () => {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto">
               <Nav.Link>
-                <i class="bi bi-cart"> Cart</i>
+                <i class="bi bi-cart">Cart</i>
               </Nav.Link>
 
               {loggedInUser && (
